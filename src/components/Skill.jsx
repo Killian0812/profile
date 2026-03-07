@@ -1,6 +1,6 @@
 import nodejs from '../assets/techs/nodejs.png'
 import springboot from '../assets/techs/springboot.png'
-import mysql from '../assets/techs/mysql.png'
+import postgresql from '../assets/techs/postgresql.svg'
 import redis from '../assets/techs/redis.png'
 import react from '../assets/techs/react.png'
 import mongodb from '../assets/techs/mongodb.png'
@@ -9,7 +9,7 @@ import reactNative from '../assets/techs/reactnative.png'
 import git from '../assets/techs/git.png'
 import flutter from '../assets/techs/flutter.svg'
 import gcp from '../assets/techs/gcp.png'
-import tensorflow from '../assets/techs/tensorflow.png'
+import aws from '../assets/techs/aws.webp'
 import { motion } from "framer-motion";
 
 const Skill = () => {
@@ -40,8 +40,8 @@ const Skill = () => {
     },
     {
       id: 2,
-      src: mysql,
-      title: "MySQL",
+      src: postgresql,
+      title: "PostgreSQL",
       style: "shadow-blue-500",
     },
     {
@@ -82,8 +82,8 @@ const Skill = () => {
     },
     {
       id: 15,
-      src: tensorflow,
-      title: "TensorFlow",
+      src: aws,
+      title: "AWS",
       style: "shadow-yellow-500",
     },
   ];

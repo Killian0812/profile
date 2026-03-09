@@ -59,10 +59,12 @@ const Home = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
-          <img
+          <motion.img
             src={ProfileImage}
             alt="my profile"
             className="rounded-2xl mx-auto w-full shadow-lg shadow-gray-800"
+            whileHover={{ scale: 1.03, filter: "brightness(1.1)" }}
+            transition={{ duration: 0.3 }}
           />
         </motion.div>
       </div>

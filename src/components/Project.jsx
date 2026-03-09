@@ -51,32 +51,45 @@ const Project = () => {
           <p className="py-6">Check out some of my work right here</p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 px-12 sm:px-0 items-stretch">
           {projects.map((project, index) => {
             const { id, src, title, content, techstack } = project;
+            const tags = techstack.split(", ");
             return (
               <motion.div
                 key={id}
-                className="shadow-md shadow-gray-600 rounded-lg hover:scale-105 duration-300"
+                className="flex flex-col bg-gray-900 border border-gray-700/50 rounded-xl overflow-hidden shadow-lg shadow-black/40 hover:scale-105 hover:border-gray-500/70 duration-300"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true, amount: 0.2 }}
               >
-                <img
-                  src={src}
-                  alt=""
-                  className="rounded-md duration-200 w-full h-[150px]"
-                />
-                <div className="flex items-center justify-center pt-2 font-bold">
-                  <p>{title}</p>
+                <div className="overflow-hidden">
+                  <img
+                    src={src}
+                    alt={title}
+                    className="w-full h-48 object-cover hover:brightness-110 duration-300"
+                  />
                 </div>
-                <hr className="w-full"></hr>
-                <div className="px-3 py-2 text-sm">
-                  <p>{content}</p>
-                </div>
-                <div className="py-3 px-3 text-sm italic border-t border-gray-600 mt-auto">
-                  <p>Techstack: {techstack}</p>
+                <div className="flex flex-col flex-1 p-4 gap-3">
+                  <motion.h3
+                    className="text-base font-bold tracking-wide"
+                    whileHover={{ color: "#e2e8f0" }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    {title}
+                  </motion.h3>
+                  <p className="text-sm text-gray-400 leading-relaxed flex-1">{content}</p>
+                  <div className="flex flex-wrap gap-1.5 pt-2 border-t border-gray-700/60">
+                    {tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="text-xs px-2 py-0.5 rounded-full bg-gray-700/60 text-gray-300 border border-gray-600/40"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </motion.div>
             );

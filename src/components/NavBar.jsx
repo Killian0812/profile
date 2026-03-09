@@ -32,7 +32,7 @@ const NavBar = () => {
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
       <div>
-        <img src={Logo} alt="Logo" className="h-12 ml-2" />
+        <img src={Logo} alt="Logo" className="h-12 ml-2 hover:scale-110 duration-200" />
       </div>
 
       <ul className="hidden md:flex">

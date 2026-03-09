@@ -110,7 +110,7 @@ const Skill = () => {
           {techs.map((tech, index) => (
             <motion.div
               key={tech.id}
-              className={`shadow-md hover:scale-105 duration-500 py-4 rounded-lg flex flex-col items-center justify-center gap-3 h-40 ${tech.style}`}
+              className={`shadow-md hover:scale-105 hover:-translate-y-2 hover:brightness-125 duration-500 py-4 rounded-lg flex flex-col items-center justify-center gap-3 h-40 ${tech.style}`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: index * 0.08 }}

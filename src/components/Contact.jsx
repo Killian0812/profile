@@ -26,12 +26,14 @@ const Contact = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true, amount: 0.2 }}
         >
-          <p className="py-1">Facebook: <a href="https://www.facebook.com/profile.php?id=100007801574815"
-            target="_blank" rel="noreferrer" className="underline text-blue-500">Nguyễn Cường</a></p>
-          <p className="py-1">Linkedin: <a href="https://www.linkedin.com/in/cuong-nguyen-881209259"
-            target="_blank" rel="noreferrer" className="underline text-blue-500">Cuong Nguyen</a></p>
-          <p className="py-1">Email: ngcuong0812@gmail.com</p>
-          <p className="py-1">Phone: (+84) 888 264 006</p>
+          <p className="py-1">Facebook: <motion.a href="https://www.facebook.com/profile.php?id=100007801574815"
+            target="_blank" rel="noreferrer" className="underline text-blue-500"
+            whileHover={{ color: "#93c5fd" }} transition={{ duration: 0.2 }}>Nguyễn Cường</motion.a></p>
+          <p className="py-1">Linkedin: <motion.a href="https://www.linkedin.com/in/cuong-nguyen-881209259"
+            target="_blank" rel="noreferrer" className="underline text-blue-500"
+            whileHover={{ color: "#93c5fd" }} transition={{ duration: 0.2 }}>Cuong Nguyen</motion.a></p>
+          <p className="py-1 hover:translate-x-1 transition duration-200">Email: ngcuong0812@gmail.com</p>
+          <p className="py-1 hover:translate-x-1 transition duration-200">Phone: (+84) 888 264 006</p>
         </motion.div>
       </div>
     </div>

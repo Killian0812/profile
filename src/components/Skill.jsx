@@ -113,7 +113,7 @@ const Skill = () => {
               className={`shadow-md hover:scale-105 hover:-translate-y-2 hover:brightness-125 duration-500 py-4 rounded-lg flex flex-col items-center justify-center gap-3 h-40 ${tech.style}`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: index * 0.08 }}
+              transition={{ duration: 0.25, delay: index * 0.04 }}
               viewport={{ once: true, amount: 0.2 }}
             >
               <img src={tech.src} alt="" className="w-16 h-16 mx-auto object-contain" />

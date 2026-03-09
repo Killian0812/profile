@@ -45,6 +45,20 @@ const About = () => {
           When I entered university, I began to explore web technologies, information systems and developed a strong interest in them.
           The ability to create useful, interactive websites, optimized applications captivated me.
         </motion.p>
+
+        <br />
+
+        <motion.p
+          className="text-xl"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          I now work as a full-time Software Engineer, building scalable backends with Node.js and NestJS,
+          cross-platform mobile apps with Flutter, and cloud infrastructure on AWS and GCP — turning the
+          curiosity I developed in competitive programming into real-world products.
+        </motion.p>
       </div>
     </div>
   );

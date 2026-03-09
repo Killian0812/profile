@@ -24,9 +24,9 @@ const Home = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-gray-300 py-4 max-w-md"
           >
-            I was born in December 2003. Majoring in Computer Engineering at
-            Hanoi University of Science and Technology (HUST) with a passion for
-            software development.
+            I was born in December 2003. I graduated from Hanoi University of
+            Science and Technology (HUST) with a B.Sc. in Computer Engineering,
+            and currently work as a Software Engineer at MMenu Co., Ltd.
           </motion.p>
         </motion.div>
 

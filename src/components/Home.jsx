@@ -1,13 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import ProfileImage from "../assets/profile.png";
 import { motion } from "framer-motion";
 
 const Home = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  // Gradual spacing animation for letters
-  const nameLetters = "Killian".split("");
-
   return (
     <div
       name="home"
@@ -20,27 +15,8 @@ const Home = () => {
           transition={{ duration: 0.8 }}
           className="flex flex-col justify-center md:w-[70%]"
         >
-          <span
-            className="text-4xl sm:text-7xl text-white"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            {nameLetters.map((letter, index) => (
-              <motion.span
-                key={index}
-                initial={{ letterSpacing: "0rem" }}
-                animate={{
-                  letterSpacing: isHovered ? "0.5rem" : "0rem",
-                  transition: {
-                    duration: 0.5,
-                    delay: index * 0.05,
-                  },
-                }}
-                className="inline-block"
-              >
-                {letter}
-              </motion.span>
-            ))}
+          <span className="text-4xl sm:text-7xl text-white">
+            Killian
           </span>
           <motion.p
             initial={{ opacity: 0 }}

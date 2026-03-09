@@ -7,7 +7,7 @@ const Contact = () => {
       name="contact"
       className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
     >
-      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
+      <div className="flex flex-col p-4 justify-start pt-20 max-w-screen-lg mx-auto h-full">
         <motion.div
           className="pb-8"
           initial={{ opacity: 0, y: 20 }}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaGithub, FaFacebook, FaPlus, FaTimes } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaPlus, FaTimes } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { ImProfile } from "react-icons/im";
 
@@ -9,18 +9,6 @@ const SocialLinks = () => {
   const links = [
     {
       id: 1,
-      icon: <FaFacebook size={20} />,
-      label: "Facebook",
-      child: (
-        <>
-          Facebook <FaFacebook size={30} />
-        </>
-      ),
-      href: "https://www.facebook.com/profile.php?id=100007801574815",
-      style: "rounded-tr-md",
-    },
-    {
-      id: 2,
       icon: <FaGithub size={20} />,
       label: "GitHub",
       child: (
@@ -29,6 +17,18 @@ const SocialLinks = () => {
         </>
       ),
       href: "https://github.com/Killian0812",
+      style: "rounded-tr-md",
+    },
+    {
+      id: 2,
+      icon: <FaLinkedin size={20} />,
+      label: "LinkedIn",
+      child: (
+        <>
+          LinkedIn <FaLinkedin size={30} />
+        </>
+      ),
+      href: "https://www.linkedin.com/in/cuong-nguyen-881209259",
     },
     {
       id: 3,
@@ -50,9 +50,8 @@ const SocialLinks = () => {
           CV <ImProfile size={30} />
         </>
       ),
-      href: "Nguyen-Manh-Cuong-CV(en).pdf",
+      href: "/profile/Nguyen-Manh-Cuong-CV(en).pdf",
       style: "rounded-br-md",
-      download: true,
     },
   ];
 

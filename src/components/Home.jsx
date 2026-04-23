@@ -26,7 +26,7 @@ const Home = () => {
           >
             I was born in December 2003. I graduated from Hanoi University of
             Science and Technology (HUST) with a B.Sc. in Computer Engineering,
-            and currently work as a Software Engineer at MMenu Co., Ltd.
+            and currently work as a Software Engineer.
           </motion.p>
         </motion.div>
 
@@ -38,7 +38,7 @@ const Home = () => {
           <motion.img
             src={ProfileImage}
             alt="my profile"
-            className="rounded-2xl mx-auto w-full shadow-lg shadow-gray-800"
+            className="rounded-2xl mx-auto w-full shadow-lg shadow-gray-800 max-w-[500px] aspect-square"
             whileHover={{ scale: 1.03, filter: "brightness(1.1)" }}
             transition={{ duration: 0.3 }}
           />
